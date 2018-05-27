@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+  <test name="RegressionSuite">
+        <classes>
+      <class name="Barbbler.AutomationExcercise.LoginScreenTest"/>
+      <class name="Barbbler.AutomationExcercise.PaymentScreenTest"/>
+      <class name="Barbbler.AutomationExcercise.MakePaymentTest"/>
+      <class name="Barbbler.AutomationExcercise.CancelPaymentTest"/>
+      <class name="Barbbler.AutomationExcercise.LogoutTest"/>
+    </classes>
+  </test>
+</suite>

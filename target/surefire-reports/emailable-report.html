@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Regression</th></tr>
+<tr><td><a href="#t0">RegressionSuite</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">231,307</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionSuite &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Barbbler.AutomationExcercise.LoginScreenTest</td><td><a href="#m0">testUntitled</a></td><td rowspan="1">1527450987110</td><td rowspan="1">9091</td></tr><tr><th colspan="4">RegressionSuite &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Barbbler.AutomationExcercise.CancelPaymentTest</td><td><a href="#m1">testUntitled</a></td><td rowspan="1">1527451121919</td><td rowspan="1">44960</td></tr><tr class="passedodd"><td rowspan="1">Barbbler.AutomationExcercise.LogoutTest</td><td><a href="#m2">testUntitled</a></td><td rowspan="1">1527451180591</td><td rowspan="1">25503</td></tr><tr class="passedeven"><td rowspan="1">Barbbler.AutomationExcercise.MakePaymentTest</td><td><a href="#m3">testUntitled</a></td><td rowspan="1">1527451057799</td><td rowspan="1">50449</td></tr><tr class="passedodd"><td rowspan="1">Barbbler.AutomationExcercise.PaymentScreenTest</td><td><a href="#m4">testUntitled</a></td><td rowspan="1">1527451012034</td><td rowspan="1">33021</td></tr></tbody>
+</table>
+<h2>RegressionSuite</h2><h3 id="m0">Barbbler.AutomationExcercise.LoginScreenTest#testUntitled</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error (An unknown server-side error occurred. status=&apos;false&apos;. Failed to complete internal method: &apos;elementSendText args: [NATIVE, xpath=(//*[@id=&apos;passwordTextField&apos;])[1], 0, company]&apos;, details: Failed to send text to &apos;xpath=(//*[@id=&apos;passwordTextField&apos;])[1]&apos;. Failed to get screen. null)  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;E0349464&apos;, ip: &apos;192.168.0.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{device.majorVersion=7.0.x, dontGoHomeOnQuit=false, device.os=Android, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={reportDirectory=reports, reportFormat=xml, udid=01171132ba271901, platformName=Android, testName=Untitled}, device.serialNumber=01171132ba271901, locationServicesAuthorized=false, device.version=7.0, reportDirectory=reports, autoWebview=false, udid=01171132ba271901, platformName=Android, testName=Untitled, device.screenSize=1440x2560, useKeystore=false, device.manufacture=samsung, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=C:\Users\RajendranV2\appiumstudioenterprise-reports\reports\test12, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=SM-G920F, device.name=samsung SM-G920F --RCS DTAG, autoGrantPermissions=false, projectName=, autoAcceptAlerts=false}]
+Session ID: 80f675a7-22ae-48f1-b70e-dd394955c9b8
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:33)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
+	at Barbbler.AutomationExcercise.LoginPage.testLogin(LoginPage.java:17)
+	at Barbbler.AutomationExcercise.LoginScreenTest.testUntitled(LoginScreenTest.java:10)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Barbbler.AutomationExcercise.CancelPaymentTest#testUntitled</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Barbbler.AutomationExcercise.LogoutTest#testUntitled</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Barbbler.AutomationExcercise.MakePaymentTest#testUntitled</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Barbbler.AutomationExcercise.PaymentScreenTest#testUntitled</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

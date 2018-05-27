@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression" duration-ms="217708" started-at="2018-05-27T19:45:10Z" finished-at="2018-05-27T19:48:47Z">
+    <groups>
+    </groups>
+    <test name="RegressionSuite" duration-ms="217708" started-at="2018-05-27T19:45:10Z" finished-at="2018-05-27T19:48:47Z">
+      <class name="Barbbler.AutomationExcercise.LoginScreenTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Barbbler.AutomationExcercise.LoginScreenTest@33723e30]" name="setUp" is-config="true" duration-ms="7473" started-at="2018-05-27T19:45:10Z" finished-at="2018-05-27T19:45:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:Barbbler.AutomationExcercise.LoginScreenTest@33723e30]" name="testUntitled" duration-ms="15425" started-at="2018-05-27T19:45:17Z" finished-at="2018-05-27T19:45:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Barbbler.AutomationExcercise.LoginScreenTest@33723e30]" name="tearDown" is-config="true" duration-ms="3781" started-at="2018-05-27T19:45:33Z" finished-at="2018-05-27T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Barbbler.AutomationExcercise.LoginScreenTest -->
+      <class name="Barbbler.AutomationExcercise.LogoutTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Barbbler.AutomationExcercise.LogoutTest@5891e32e]" name="setUp" is-config="true" duration-ms="6501" started-at="2018-05-27T19:48:13Z" finished-at="2018-05-27T19:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:Barbbler.AutomationExcercise.LogoutTest@5891e32e]" name="testUntitled" duration-ms="23325" started-at="2018-05-27T19:48:20Z" finished-at="2018-05-27T19:48:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Barbbler.AutomationExcercise.LogoutTest@5891e32e]" name="tearDown" is-config="true" duration-ms="4209" started-at="2018-05-27T19:48:43Z" finished-at="2018-05-27T19:48:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Barbbler.AutomationExcercise.LogoutTest -->
+      <class name="Barbbler.AutomationExcercise.CancelPaymentTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Barbbler.AutomationExcercise.CancelPaymentTest@7a30d1e6]" name="setUp" is-config="true" duration-ms="6337" started-at="2018-05-27T19:47:19Z" finished-at="2018-05-27T19:47:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:Barbbler.AutomationExcercise.CancelPaymentTest@7a30d1e6]" name="testUntitled" duration-ms="43219" started-at="2018-05-27T19:47:25Z" finished-at="2018-05-27T19:48:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Barbbler.AutomationExcercise.CancelPaymentTest@7a30d1e6]" name="tearDown" is-config="true" duration-ms="5204" started-at="2018-05-27T19:48:08Z" finished-at="2018-05-27T19:48:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Barbbler.AutomationExcercise.CancelPaymentTest -->
+      <class name="Barbbler.AutomationExcercise.MakePaymentTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Barbbler.AutomationExcercise.MakePaymentTest@553a3d88]" name="setUp" is-config="true" duration-ms="6185" started-at="2018-05-27T19:46:18Z" finished-at="2018-05-27T19:46:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:Barbbler.AutomationExcercise.MakePaymentTest@553a3d88]" name="testUntitled" duration-ms="49373" started-at="2018-05-27T19:46:24Z" finished-at="2018-05-27T19:47:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Barbbler.AutomationExcercise.MakePaymentTest@553a3d88]" name="tearDown" is-config="true" duration-ms="4845" started-at="2018-05-27T19:47:14Z" finished-at="2018-05-27T19:47:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Barbbler.AutomationExcercise.MakePaymentTest -->
+      <class name="Barbbler.AutomationExcercise.PaymentScreenTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Barbbler.AutomationExcercise.PaymentScreenTest@64f6106c]" name="setUp" is-config="true" duration-ms="5128" started-at="2018-05-27T19:45:36Z" finished-at="2018-05-27T19:45:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:Barbbler.AutomationExcercise.PaymentScreenTest@64f6106c]" name="testUntitled" duration-ms="32088" started-at="2018-05-27T19:45:42Z" finished-at="2018-05-27T19:46:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Barbbler.AutomationExcercise.PaymentScreenTest@64f6106c]" name="tearDown" is-config="true" duration-ms="4570" started-at="2018-05-27T19:46:14Z" finished-at="2018-05-27T19:46:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Barbbler.AutomationExcercise.PaymentScreenTest -->
+    </test> <!-- RegressionSuite -->
+  </suite> <!-- Regression -->
+</testng-results>

@@ -1,0 +1,6 @@
+#surefire_0
+#Sun May 27 21:56:19 CEST 2018
+testng.selenium.endpoint=https\://google.com
+user.dir=C\:\\Users\\RajendranV2\\workspace\\AutomationExcercise
+localRepository=C\:\\Users\\RajendranV2\\.m2\\repository
+basedir=C\:\\Users\\RajendranV2\\workspace\\AutomationExcercise

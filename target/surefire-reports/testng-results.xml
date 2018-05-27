@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression" duration-ms="231307" started-at="2018-05-27T19:56:20Z" finished-at="2018-05-27T20:00:11Z">
+    <groups>
+    </groups>
+    <test name="RegressionSuite" duration-ms="231307" started-at="2018-05-27T19:56:20Z" finished-at="2018-05-27T20:00:11Z">
+      <class name="Barbbler.AutomationExcercise.LoginScreenTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Barbbler.AutomationExcercise.LoginScreenTest@1f28c152]" name="setUp" is-config="true" duration-ms="6713" started-at="2018-05-27T19:56:20Z" finished-at="2018-05-27T19:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testUntitled()[pri:0, instance:Barbbler.AutomationExcercise.LoginScreenTest@1f28c152]" name="testUntitled" duration-ms="9091" started-at="2018-05-27T19:56:27Z" finished-at="2018-05-27T19:56:36Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error (An unknown server-side error occurred. status='false'. Failed to complete internal method: 'elementSendText args: [NATIVE, xpath=(//*[@id='passwordTextField'])[1], 0, company]', details: Failed to send text to 'xpath=(//*[@id='passwordTextField'])[1]'. Failed to get screen. null)  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'E0349464', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{device.majorVersion=7.0.x, dontGoHomeOnQuit=false, device.os=Android, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={reportDirectory=reports, reportFormat=xml, udid=01171132ba271901, platformName=Android, testName=Untitled}, device.serialNumber=01171132ba271901, locationServicesAuthorized=false, device.version=7.0, reportDirectory=reports, autoWebview=false, udid=01171132ba271901, platformName=Android, testName=Untitled, device.screenSize=1440x2560, useKeystore=false, device.manufacture=samsung, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=C:\Users\RajendranV2\appiumstudioenterprise-reports\reports\test12, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=SM-G920F, device.name=samsung SM-G920F --RCS DTAG, autoGrantPermissions=false, projectName=, autoAcceptAlerts=false}]
+Session ID: 80f675a7-22ae-48f1-b70e-dd394955c9b8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error (An unknown server-side error occurred. status='false'. Failed to complete internal method: 'elementSendText args: [NATIVE, xpath=(//*[@id='passwordTextField'])[1], 0, company]', details: Failed to send text to 'xpath=(//*[@id='passwordTextField'])[1]'. Failed to get screen. null)  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'E0349464', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{device.majorVersion=7.0.x, dontGoHomeOnQuit=false, device.os=Android, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={reportDirectory=reports, reportFormat=xml, udid=01171132ba271901, platformName=Android, testName=Untitled}, device.serialNumber=01171132ba271901, locationServicesAuthorized=false, device.version=7.0, reportDirectory=reports, autoWebview=false, udid=01171132ba271901, platformName=Android, testName=Untitled, device.screenSize=1440x2560, useKeystore=false, device.manufacture=samsung, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=C:\Users\RajendranV2\appiumstudioenterprise-reports\reports\test12, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=SM-G920F, device.name=samsung SM-G920F --RCS DTAG, autoGrantPermissions=false, projectName=, autoAcceptAlerts=false}]
+Session ID: 80f675a7-22ae-48f1-b70e-dd394955c9b8
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:33)
+at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
+at Barbbler.AutomationExcercise.LoginPage.testLogin(LoginPage.java:17)
+at Barbbler.AutomationExcercise.LoginScreenTest.testUntitled(LoginScreenTest.java:10)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Barbbler.AutomationExcercise.LoginScreenTest@1f28c152]" name="tearDown" is-config="true" duration-ms="7647" started-at="2018-05-27T19:56:36Z" finished-at="2018-05-27T19:56:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Barbbler.AutomationExcercise.LoginScreenTest -->
+      <class name="Barbbler.AutomationExcercise.CancelPaymentTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Barbbler.AutomationExcercise.CancelPaymentTest@3a5ed7a6]" name="setUp" is-config="true" duration-ms="8462" started-at="2018-05-27T19:58:33Z" finished-at="2018-05-27T19:58:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:Barbbler.AutomationExcercise.CancelPaymentTest@3a5ed7a6]" name="testUntitled" duration-ms="44960" started-at="2018-05-27T19:58:41Z" finished-at="2018-05-27T19:59:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Barbbler.AutomationExcercise.CancelPaymentTest@3a5ed7a6]" name="tearDown" is-config="true" duration-ms="5180" started-at="2018-05-27T19:59:26Z" finished-at="2018-05-27T19:59:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Barbbler.AutomationExcercise.CancelPaymentTest -->
+      <class name="Barbbler.AutomationExcercise.LogoutTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Barbbler.AutomationExcercise.LogoutTest@6325a3ee]" name="setUp" is-config="true" duration-ms="8531" started-at="2018-05-27T19:59:32Z" finished-at="2018-05-27T19:59:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:Barbbler.AutomationExcercise.LogoutTest@6325a3ee]" name="testUntitled" duration-ms="25503" started-at="2018-05-27T19:59:40Z" finished-at="2018-05-27T20:00:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Barbbler.AutomationExcercise.LogoutTest@6325a3ee]" name="tearDown" is-config="true" duration-ms="5592" started-at="2018-05-27T20:00:06Z" finished-at="2018-05-27T20:00:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Barbbler.AutomationExcercise.LogoutTest -->
+      <class name="Barbbler.AutomationExcercise.PaymentScreenTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Barbbler.AutomationExcercise.PaymentScreenTest@7d907bac]" name="setUp" is-config="true" duration-ms="8163" started-at="2018-05-27T19:56:43Z" finished-at="2018-05-27T19:56:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:Barbbler.AutomationExcercise.PaymentScreenTest@7d907bac]" name="testUntitled" duration-ms="33021" started-at="2018-05-27T19:56:52Z" finished-at="2018-05-27T19:57:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Barbbler.AutomationExcercise.PaymentScreenTest@7d907bac]" name="tearDown" is-config="true" duration-ms="4493" started-at="2018-05-27T19:57:25Z" finished-at="2018-05-27T19:57:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Barbbler.AutomationExcercise.PaymentScreenTest -->
+      <class name="Barbbler.AutomationExcercise.MakePaymentTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Barbbler.AutomationExcercise.MakePaymentTest@7791a895]" name="setUp" is-config="true" duration-ms="8248" started-at="2018-05-27T19:57:29Z" finished-at="2018-05-27T19:57:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:Barbbler.AutomationExcercise.MakePaymentTest@7791a895]" name="testUntitled" duration-ms="50449" started-at="2018-05-27T19:57:37Z" finished-at="2018-05-27T19:58:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Barbbler.AutomationExcercise.MakePaymentTest@7791a895]" name="tearDown" is-config="true" duration-ms="5206" started-at="2018-05-27T19:58:28Z" finished-at="2018-05-27T19:58:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Barbbler.AutomationExcercise.MakePaymentTest -->
+    </test> <!-- RegressionSuite -->
+  </suite> <!-- Regression -->
+</testng-results>
