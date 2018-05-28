@@ -1,7 +1,13 @@
 package Barbbler.AutomationExcercise;
 import Barbbler.AutomationExcercise.Base;
 import Barbbler.AutomationExcercise.Data;
+import Barbbler.AutomationExcercise.LoginPage.PageObjects;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class MakePaymentPage extends Base{
 	
@@ -14,28 +20,62 @@ public class MakePaymentPage extends Base{
 	private static final String SendPaymentButton="//*[@text='Send Payment']";
 	private static final String ConfirmButton= "//*[@text='Yes']";
 	private static final String CancelButton= "//*[@text='Cancel']";
-   
-    public static void testPaymentScreen() {
-        driver.findElement(By.xpath(MakePaymentButton)).click();
-        driver.findElement(By.xpath(PhoneText)).sendKeys(Data.inputdata.Phone); 
-        driver.findElement(By.xpath(NameText)).sendKeys(Data.inputdata.Name); 
-        driver.findElement(By.xpath(AmountText)).sendKeys(Data.inputdata.Amount);
-        driver.findElement(By.xpath(SelectButton)).click();
+	PageObjects makepaymentpage;
+	 public MakePaymentPage() {
+	        super();
+	       makepaymentpage = new PageObjects();
+	        PageFactory.initElements(driver, makepaymentpage);
+	    }
+  
+    public  void testPaymentScreen() {
+    	makepaymentpage.MakePaymentFld.click();
+        makepaymentpage.NameFld.sendKeys(Data.inputdata.Name);
+        makepaymentpage.phoneField.sendKeys(Data.inputdata.Phone);
+        makepaymentpage.amountField.sendKeys(Data.inputdata.Amount);
         driver.executeScript("seetest:client.swipeWhileNotFound(\"Down\", 350, 2000, \"NATIVE\", \"//*[@text='Germany']\", 0, 1000, 5, true)");
-        driver.findElement(By.xpath(SendPaymentButton)).click();
-        driver.findElement(By.xpath(ConfirmButton)).click();
+        makepaymentpage.sendpaymentBtn.click();
         System.out.println("TestPass: Payment done successfully");
         }
-    public static void CancelPaymentScreen() {
-        driver.findElement(By.xpath(MakePaymentButton)).click();
-        driver.findElement(By.xpath(PhoneText)).sendKeys(Data.inputdata.Phone); 
-        driver.findElement(By.xpath(NameText)).sendKeys(Data.inputdata.Name); 
-        driver.findElement(By.xpath(AmountText)).sendKeys(Data.inputdata.Amount);
-        driver.findElement(By.xpath(SelectButton)).click();
+    public  void CancelPaymentScreen() {
+    	makepaymentpage.MakePaymentFld.click();
+        makepaymentpage.NameFld.sendKeys(Data.inputdata.Name);
+        makepaymentpage.phoneField.sendKeys(Data.inputdata.Phone);
+        makepaymentpage.amountField.sendKeys(Data.inputdata.Amount);
         driver.executeScript("seetest:client.swipeWhileNotFound(\"Down\", 350, 2000, \"NATIVE\", \"//*[@text='Germany']\", 0, 1000, 5, true)");
-        driver.findElement(By.xpath(CancelButton)).click();
+        makepaymentpage.cancelBtn.click();
         System.out.println("TestPass: Payment cancelled without any issues");
         }
 
-    
+    class PageObjects {
+    	@CacheLookup
+        @FindBy(name = "Make Payment")
+        public WebElement MakePaymentFld;
+
+
+        @CacheLookup
+        @FindBy(id = "nameTextField")
+        public WebElement NameFld;
+
+        @CacheLookup
+        @FindBy(id = "phoneTextField")
+        public WebElement phoneField;
+        
+        @CacheLookup
+        @FindBy(id = "amountTextField")
+        public WebElement amountField;
+
+        @CacheLookup
+        @FindBy(name = "Select")
+        public WebElement selectBtn;
+        @CacheLookup
+        @FindBy(name = "Send Payment")
+        public WebElement sendpaymentBtn;
+        @CacheLookup
+        @FindBy(name = "Cancel")
+        public WebElement cancelBtn;
+       
+
+
+    }
+
 }

@@ -8,8 +8,10 @@ public class CancelPaymentTest extends Base{
    @Test
     public void testUntitled() 
    {
-       LoginPage.testLogin();
-	   MakePaymentPage.CancelPaymentScreen();
+	   LoginPage l=new LoginPage();
+       l.testLogin();
+	   MakePaymentPage m=new MakePaymentPage();
+	   m.CancelPaymentScreen();
 	  
        
     }

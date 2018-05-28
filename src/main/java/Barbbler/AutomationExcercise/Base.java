@@ -24,9 +24,21 @@ public class Base
 	        dc.setCapability("reportFormat", reportFormat);
 	        dc.setCapability("testName", testName);
 	        dc.setCapability(MobileCapabilityType.UDID, Data.inputdata.DeviceUDID);
+	        System.out.println("DeviceUDID"+ Data.inputdata.DeviceUDID);
+	        try{
 	        driver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"), dc);
+	        System.out.println(driver);
+	        }
+	        catch(Exception e){
+	        	System.out.println(e.getMessage());
+	        	System.out.println("Initiating Driver error");
+	        }
 	        driver.setLogLevel(Level.INFO);
 	    }
+	 public AndroidDriver<AndroidElement> getDriver(){
+	        return driver;
+	    }
+	 
 	 @AfterMethod
 	    public void tearDown() {
 	        driver.quit();

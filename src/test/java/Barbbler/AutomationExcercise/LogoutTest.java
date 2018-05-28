@@ -8,8 +8,10 @@ public class LogoutTest extends Base{
    @Test
     public void testUntitled() 
    {
-       LoginPage.testLogin();
-	   LogoutPage.testLogoutScreen();
+	   LoginPage l=new LoginPage();
+	   LogoutPage lo=new LogoutPage();
+       l.testLogin();
+	   lo.testLogoutScreen();
        
     }
 

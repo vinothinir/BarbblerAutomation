@@ -8,8 +8,10 @@ public class MakePaymentTest extends Base{
    @Test
     public void testUntitled() 
    {
-       LoginPage.testLogin();
-	   MakePaymentPage.testPaymentScreen();
+       LoginPage l=new LoginPage();
+       l.testLogin();
+	   MakePaymentPage m=new MakePaymentPage();
+	   m.testPaymentScreen();
        
     }
 

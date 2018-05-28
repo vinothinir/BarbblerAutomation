@@ -1,28 +1,54 @@
 package Barbbler.AutomationExcercise;
 import Barbbler.AutomationExcercise.Base;
 import Barbbler.AutomationExcercise.Data;
-import org.openqa.selenium.By;
+import org.openqa.selenium.support.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.pagefactory.*;
 
-public class LoginPage extends Base{
-	
-	private static final String UserName = "//*[@id='usernameTextField']";
-	private static final String Password = "//*[@id='passwordTextField']";
-	private static final String Login_Button = "//*[@text='Login']";
+public class LoginPage extends Driver{
+	PageObjects loginpage;
+	 public LoginPage() {
+	        super();
+	        loginpage = new PageObjects();
+	        PageFactory.initElements(driver, loginpage);
+	    }
    
-    public static void testLogin() {
-        driver.executeScript("seetest:client.setDevice(\"adb:samsung SM-G920F --RCS DTAG\")");
+    public   void testLogin() {
+    	driver.executeScript("seetest:client.setDevice(\"adb:samsung SM-G920F --RCS DTAG\")");
 	   //driver.executeScript("seetest:client.setDevice("+Data.inputdata.DeviceName+\")");
-        driver.startActivity("com.experitest.ExperiBank", ".LoginActivity");
-        driver.findElement(By.xpath(UserName)).sendKeys(Data.inputdata.UserName);
-        driver.findElement(By.xpath(Password)).sendKeys(Data.inputdata.Password);
-        driver.findElement(By.xpath(Login_Button)).click();
-        if (Data.inputdata.UserName.equals("company")){
-        	if (Data.inputdata.Password.equals("company")){
-        	System.out.println("LoginScreen Passed");
+    	driver.startActivity("com.experitest.ExperiBank", ".LoginActivity");
+    	if (loginpage.userNameFld.isDisplayed()){
+        if(loginpage.passwordField.isDisplayed()){
+        	if(loginpage.loginBtn.isDisplayed()){
+        		System.out.println("All objects are displayed correctly");
+        		loginpage.userNameFld.sendKeys(Data.inputdata.UserName);
+        		loginpage.passwordField.sendKeys(Data.inputdata.Password);
+        		loginpage.loginBtn.click();
+        		System.out.println("Loggined into the application successfully");
+        	}
         }
 
     }
     }
+    class PageObjects {
+
+        @CacheLookup
+        @FindBy(id = "usernameTextField")
+        public WebElement userNameFld;
+
+        @CacheLookup
+        @FindBy(id = "passwordTextField")
+        public WebElement passwordField;
+
+        @CacheLookup
+        @FindBy(name = "Login")
+        public WebElement loginBtn;
+
+       
+
+
+    }
+
 }
 
     

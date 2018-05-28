@@ -7,7 +7,8 @@ public class LoginScreenTest extends Base{
 	
    @Test
     public void testUntitled() {
-       LoginPage.testLogin();
+       LoginPage login=new LoginPage();
+       login.testLogin();
        
     }
 
